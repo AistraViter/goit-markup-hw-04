@@ -120,6 +120,14 @@ img {
 
 .website-title-section {
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -186,13 +194,21 @@ img {
 .strengths-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
+.strengths-box {
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  padding: 24px 100px;
+}
 
 .strengths-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  margin: 8px auto;
 }
 
 /*3 Our Team Section*/
@@ -223,6 +239,9 @@ img {
   background-color: white;
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .teammate-name-subitem {
@@ -240,6 +259,20 @@ img {
 .teammate-role {
   text-align: center;
 }
+.teammate-contacts-list {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.round-item {
+  flex-basis: calc((100% - 72px) / 4);
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  padding: 12px;
+}
 
 /*4 Portfolio*/
 .portfolio-section {
@@ -255,6 +288,9 @@ img {
 }
 .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .product-name-subitem {
   padding: 32px 16px;
@@ -276,7 +312,9 @@ img {
   background-color: #2e2f42;
   padding: 100px 0;
 }
-
+.footer-info-list {
+  gap: 120px;
+}
 .logo-text-footer {
   display: inline-block;
   color: #4d5ae5;
@@ -302,3 +340,27 @@ img {
   text-align: justify;
   max-width: 264px;
 }
+
+.footer-sociallinks {
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.footer-contacts-list {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.footer-round-item {
+  flex-basis: calc((100% - 72px) / 4);
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  padding: 8px;
+}
+
