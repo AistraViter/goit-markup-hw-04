@@ -125,6 +125,7 @@ img {
 /*1 Website Title Section*/
 
 .website-title-section {
+  max-width: 1440px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -133,7 +134,7 @@ img {
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: 50% 50%;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -338,9 +339,13 @@ img {
 }
 .footer-container {
   display: flex;
-  gap: 120px;
   align-items: baseline;
 }
+
+.footer-logo-container {
+  margin-right: 120px;
+}
+
 .logo-text-footer {
   display: inline-block;
   color: #4d5ae5;
@@ -367,8 +372,11 @@ img {
   max-width: 264px;
 }
 
+/* FOOTER*/
+/*Social Media*/
+
 .footer-socialmedia-text {
-  color: #f4f4fd;
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.5;
   text-align: justify;
@@ -376,25 +384,12 @@ img {
   margin-bottom: 16px;
 }
 
-
-.footer-round-item {
-  flex-basis: calc((100% - 72px) / 4);
-  width: 40px;
-  height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  padding: 8px;
-  position: relative;
-}
-
-
-.footer-socialmedia-list  {
+.footer-socialmedia-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
 }
-
 
 .footer-socialmedia-link {
   width: 40px;
@@ -404,12 +399,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socialmedia-link:hover,
 .footer-socialmedia-link:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 
+.footer-contacts-icon {
+  width: 24px;
+  height: 24px;
+  fill:  #f4f4fd;
+}
