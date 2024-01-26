@@ -115,7 +115,6 @@ img {
   line-height: 1.5;
   text-decoration: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .contacts-text-item:hover,
@@ -170,7 +169,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .button-text:hover,
 .button-text:focus {
   background-color: #404bbf;
@@ -209,8 +207,11 @@ img {
   background-color: #f4f4fd;
   border-radius: 4px;
   border: 1px solid #8e8f99;
-  padding: 24px 100px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
 }
 
 .strengths-title {
@@ -218,7 +219,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin: 8px auto;
+  margin-bottom: 8px;
 }
 
 /*3 Our Team Section*/
@@ -272,17 +273,20 @@ img {
 .teammate-contacts-list {
   margin-top: 8px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 24px;
 }
 
-.round-item {
-  flex-basis: calc((100% - 72px) / 4);
+.sociallink-link {
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
-  padding: 12px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
 }
 .contacts-icon {
 }
