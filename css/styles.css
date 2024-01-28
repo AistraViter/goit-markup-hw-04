@@ -83,7 +83,21 @@ img {
   gap: 40px;
 }
 
- .current {
+
+  
+.nav-text {
+  color: #434455;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding: 24px 0;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current {
   position: relative;
   color: #404bbf;
 
@@ -99,20 +113,6 @@ img {
   background-color: #404bbf;
   border-radius: 2px;
 }
-
-  
-.nav-text {
-  color: #434455;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  padding: 24px 0;
-  display: block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 
 
 
